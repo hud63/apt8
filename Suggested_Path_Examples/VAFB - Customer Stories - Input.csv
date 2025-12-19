@@ -1,0 +1,403 @@
+Display,Workstream,Service_Title,Customer_Story,Suggested_Path,,Estimated_Low_Hours,Estimated_High_Hours,Contracted_Hours,Requires_Clarification,Function,Library_ID,Project_ID,Internal_Notes,Task_Link
+Now,Mobilization,Project Kickoff & Governance Setup,"As the VAFB team, we need to establish project governance, align on objectives, and set up communication cadence before discovery begins.","A8 will facilitate project kickoff meeting with executive stakeholders (President/CEO of VAFB, Executive VP of Mutual Insurance Company, VP of Marketing, Director of Member Engagement, CIO), establish governance structure, define decision-making process, set up executive reporting cadence, and align on engagement objectives.","- Executive sponsors present 
+- Project team present
+- On-site presence requested for key milestones 
+- Hybrid/remote flexibility available between on-site sessions",20,30,25,FALSE,,,,,
+Now,Mobilization,Stakeholder Mapping & Interview Planning,"As the VAFB team, we need to identify and schedule all stakeholder groups for comprehensive discovery interviews across our multi-entity organization.","A8 will work with project team to finalize stakeholder list across 10-12 groups (Sales, Insurance Claims, Insurance Training, Membership, Marketing, Information Services, IS Data Services, Executive Leadership, Virginia State Fair, Healthcare Services), schedule interviews, and create customized interview agendas for each group.","- 10-12 stakeholder groups identified for interviews 
+- Key groups: Sales, Insurance Claims, Insurance Training, Membership, Marketing, Information Services, IS Data Services, Executive Leadership, Virginia State Fair, Healthcare Services 
+- Process owners: Ray Leonard (VP Sales), Mike Bolino (VP Marketing), Tom Gannon (VP Claims), Pat Caine (CIO) 
+- Distributed field organization requires coordination",6,9,8,FALSE,,,,,
+Now,Discovery,Current State Assessment - Technical Architecture,"As the VAFB team, we need to document our complex technical environment including all core systems, data flows, and integration methods.","A8 will conduct technical interviews with IT team to map: 5 core customer-related systems (Finys insurance, Personify membership, NetSuite accounting, HubSpot Health dept, One Inc), enterprise data warehouse (ODS), current integration methods (point-to-point APIs, ETL, manual entry), and data classification inventory for controlled data (HIPAA, PII, PCI DSS).","- No current enterprise CRM - Finys and Personify have limited CRM-related functionality - 5 core systems: Finys (insurance policy admin), Personify (membership), NetSuite (accounting/billing), HubSpot (Health dept only), One Inc (payments) - Enterprise data warehouse (ODS) handles data exchange between systems - Microsoft-centric platform preference (Azure, but some vendors may use AWS) - Wide range of integration methods in use - Data classification inventory completed - available during engagement - Systems to be impacted: Finys, Personify, NetSuite with others pulled in - Smaller systems being sunsetted: Ring Central (phone), Constant Contact (mass email) - Healthcare Services department uses Salesforce module separately - Data governance effort currently underway enterprise-wide",12,18,15,FALSE,,,,,
+Now,Discovery,Current State Assessment - Data Architecture & Volume,"As the VAFB team, we need to understand our data volume, growth projections, and current data management practices across affiliated companies.","A8 will work with IS Data Services team to document: current data volume in ODS, expected growth rates, data retention policies, data quality issues, master data management approach, and how customer data flows between Finys, Personify, and NetSuite.",- Enterprise data warehouse (ODS) in place - Customer data maintained in operational systems - ODS handles data exchange between systems - Complex environment - further clarification needed on specific volumes - Data growth dependent on membership/policy growth + retention/archiving rules - Personify tracks member payments and customer info - Finys and Personify work together in customized manner - Both systems supply and kick off marketing notifications,9,12,11,FALSE,,,,,
+Now,Discovery,Current State Assessment - Process Documentation & Maturity,"As the VAFB team, we need to assess our current process documentation maturity across Marketing, Sales, and Service functions.","A8 will interview process owners to assess: documentation maturity levels (formal vs tribal knowledge), standardization across affiliates and regions, existing SOPs for agents/MSS/call center, and current KPIs tracked by each function.","- Sales Training organization maintains documentation for agents, MSS, customer engagement resources - Various levels of documentation exist for specific systems - Multiple affiliated companies serve same customers in different regions - Process owners identified: Ray Leonard (Sales), Mike Bolino (Marketing), Tom Gannon (Claims), Pat Caine (Internal Info Services) - Both regulated (insurance) and community-driven (membership) environments",9,12,11,FALSE,,,,,
+Now,Discovery,Stakeholder Interviews - Sales & Distribution,"As the VAFB team, we need to understand our current sales operations, agent workflows, and distribution model across our field organization.","A8 will conduct interviews with Sales leadership and field representatives to understand: current agent access to customer data across insurance/membership entities, sales pipeline management, forecasting methods, commission tracking, agent licensing requirements, offline/mobile needs for field agents, and top friction points.","- Led by Ray Leonard, VP of Sales - Distributed field organization with agents and Member Service Specialists (MSS) - No unified customer profile currently - data siloed across Finys and Personify - Commission management and agent licensing tracking required - In-house Sales Training organization for agents/MSS workforce - Quick wins focused on sales and distribution - Strategic outcome: Producer Motivation and lead generation",12,18,15,FALSE,,,,,
+Now,Discovery,Stakeholder Interviews - Membership Operations,"As the VAFB team, we need to understand our membership processes, renewal workflows, and how membership benefits integrate with insurance products.","A8 will conduct interviews with Membership team to document: member enrollment process, renewal workflows, benefit tracking, member engagement strategies, member portal requirements, and how membership data in Personify relates to insurance data in Finys.","- Ben Rowe, Director of Member Engagement leads this area - Personify system manages membership data - Member payments and customer info tracked in Personify - Personify and Finys work together in customized manner - New member engagement and renewals are priority business units - Strategic outcome: Member Engagement and meaningful value-based engagement across Agricultural community",12,15,14,FALSE,,,,,
+Now,Discovery,Stakeholder Interviews - Insurance Operations,"As the VAFB team, we need to understand our insurance operations including policy lifecycle, claims processes, and underwriting workflows.","A8 will conduct interviews with Insurance team to document: policy quote-to-bind process, renewal workflows, claims submission and management, underwriting processes, regulatory compliance requirements (state insurance regulations), and integration needs with Finys policy admin system.","- Tom Gannon, VP of Claims leads Claims function - Finys is core insurance system - Insurance Claims stakeholder group involved - Insurance Training organization supports operations - Policy Services included in initial implementation roadmap - Strategic outcome: Policy Holder Engagement and profitable insurance growth - Regulated environment with state insurance regulations",12,15,14,FALSE,,,,,
+Now,Discovery,Stakeholder Interviews - Marketing & Communications,"As the VAFB team, we need to understand our current marketing operations, campaign execution, and member communications strategy.","A8 will conduct interviews with Marketing team to document: current marketing automation (Constant Contact being sunsetted), segmentation strategy, campaign execution processes, customer feedback capture, omnichannel orchestration needs, and AI-driven personalization opportunities.","- Mike Bolino, VP of Marketing leads this area - Current tools: Constant Contact (being sunsetted) - Finys and Personify supply marketing notifications - Marketing stakeholder group involved - Strategic outcome: Lead Generation and Communications - New VAFB Intranet launching December 2025 for internal communications - Weekly digests sent to field staff",9,12,11,FALSE,Consulting,,,,
+Now,Discovery,Stakeholder Interviews - Healthcare Services,"As the VAFB team, we need to understand our Healthcare Services operations and how they fit into the broader CRM strategy.","A8 will conduct interviews with Healthcare Services team to document: current Salesforce usage, HIPAA compliance requirements, integration with other systems, unique workflows, and how healthcare operations relate to membership and insurance.",- Healthcare Services is separate stakeholder group - Currently using a Salesforce module independently - HIPAA controlled data managed in specific business units - Executive VP of Healthcare is key stakeholder - Data classification inventory identifies HIPAA data - will be available during engagement,8,12,10,FALSE,,,,,
+Now,Discovery,1Stakeholder Interviews - Virginia State Fair,"As the VAFB team, we need to understand how Virginia State Fair operations relate to CRM strategy and member engagement.","1A8 will conduct interviews with Virginia State Fair team to understand: customer engagement at events, lead capture processes, how fair activities relate to membership/insurance, and CRM needs for event-based interactions.",1- Virginia State Fair is identified stakeholder group - Unique engagement model compared to other business units - Relationship to broader agricultural community engagement,6,9,8,FALSE,,,,,
+Now,Discovery,1Stakeholder Interviews - IT & Information Services,"As the VAFB team, we need to understand our IT organization structure, capabilities, data services team operations, and technology governance.","1A8 will conduct deep-dive interviews with IT leadership and data services team to understand: IT team structure and capabilities, data services operations, current technology governance, security and compliance frameworks, cloud strategy (Microsoft-centric), vendor approval processes, and IT's role in CRM implementation support.","1- Pat Caine, CIO leads IT organization - Information Services and IS Data Services are separate stakeholder groups - Microsoft-centric platform (Azure) - Some vendors may use AWS (not managed/controlled by VAFB) - Enterprise data governance effort underway - Data classification inventory completed - IT will be critical in solution evaluation and integration planning",9,12,11,FALSE,,,,,
+,Discovery,1Stakeholder Interviews - Finance & Accounting,"As the VAFB team, we need to understand financial reporting requirements, billing processes, and accounting system integration needs.","1A8 will conduct interviews with Finance team to document: NetSuite accounting processes, billing workflows, accounts receivable/payable, financial reporting requirements, and how CRM data must integrate with financial systems.",1- NetSuite is core accounting/billing system - Accounts Payable included in initial implementation roadmap - One Inc handles payment processing - NetSuite will be impacted by CRM strategy - Financial reporting and TCO/ROI analysis required for solution selection,8,11,10,FALSE,,,,,
+,Discovery,1CRM Maturity Assessment,"As the VAFB team, we need to understand our organizational readiness for CRM adoption across people, process, technology, and data dimensions.","1A8 will conduct maturity assessment using industry framework to evaluate: process documentation and standardization, data management practices, technology capabilities, organizational change readiness, and analytics maturity. Identify gaps and readiness levels across business units.","1- No current formal CRM in place - Finys and Personify have limited CRM-related functionality - Various levels of process documentation - Data governance effort underway - In-house training department exists - AI Governance Committee being established - Current AI uses: Robotic processing, individual Co-Pilot usage, Power BI - AI pilots at various levels - Change management infrastructure exists",12,15,14,FALSE,,,,,
+,Discovery,1Change Management & Adoption Readiness Assessment,"As the VAFB team, we need to assess our organization's readiness for large-scale CRM transformation and identify change management requirements.","1A8 will assess: historical track record with technology transformations, anticipated resistance factors by department/affiliate, existing training infrastructure, communication channels for distributed field organization, and identify natural champions/super-users within each business unit.",1- Risk vs value based approach to change - Applying Agile principles to technology and business initiatives - Implementation complexity expected to be high - Change magnitude expected to be high due to diverse but interrelated business units - In-house training department focuses on MSS and Agent workforce - New VAFB Intranet launching December 2025 - Weekly digests to field staff - Natural champions identified within business units - Distributed field organization requires tailored approach,9,12,11,FALSE,,,,,
+,Discovery,1Data Governance & Quality Assessment,"As the VAFB team, we need to assess our current data governance practices, data quality issues, and master data management readiness.","1A8 will work with Data Services team to assess: current data governance framework (in progress), data ownership structure, data quality issues in current systems, master data management practices, and single customer view definition across insurance and membership entities.","1- Enterprise data governance effort currently underway - Data classification inventory completed - Customer data siloed across Finys, Personify, NetSuite - Multiple affiliated companies may serve same customer in different regions - Controlled data (HIPAA, PII, PCI DSS) identified and classified - Data Services team part of IS organization - No current single customer view across insurance and membership",9,12,11,FALSE,,,,,
+,Journey Mapping,1Customer Journey Mapping - Priority Journeys,"As the VAFB team, we need to map our priority customer journeys to identify friction points and opportunities for CRM-enabled improvements.","1A8 will facilitate journey mapping workshops across priority journeys (TBD during discovery): potentially New Member Enrollment, Policy Quote-to-Bind, Claims Submission, Policy Renewal, Member Renewal. Document current state, identify pain points, define desired future state with CRM capabilities.","1- Specific journeys to be determined during engagement - Priority business units: Member Engagement (New & Renewal), Policy Services, Claims, Accounts Payable - Both insurance and membership journeys required - Multiple touchpoints across field agents, call center, web, in-person - Cross-entity customer experience (same customer across affiliates/regions)",15,20,18,FALSE,,,,,
+,Journey Mapping,1Omnichannel Experience Design,"As the VAFB team, we need to design seamless omnichannel experiences that align customer touchpoints across digital and traditional channels.","1A8 will map current channel usage (agents, call center, web, in-person events, email, potential SMS/social), identify gaps in channel integration, and design future state omnichannel orchestration strategy that supports both member and policyholder journeys.",1- Distributed field organization with agents and MSS - Call center/service representatives - Web portals (member and agent portals mentioned in discovery questions) - Virginia State Fair and event-based engagement - Email communications (Constant Contact being sunset) - New VAFB Intranet for internal communications - Omnichannel campaign orchestration desired,12,15,14,FALSE,,,,,
+,1Solution Evaluation,1Requirements Definition & Prioritization,"As the VAFB team, we need to translate our discovery findings into detailed functional and technical requirements with clear prioritization.","1A8 will synthesize discovery findings into comprehensive requirements document organized by: Marketing, Sales/Distribution, Service, Data/Analytics, Integration, Compliance/Security. Facilitate prioritization workshops with stakeholders to identify must-have vs nice-to-have capabilities using MoSCoW method.","1- Multiple business unit needs to balance - Both insurance and membership requirements - Regulated environment requirements (insurance, HIPAA, PCI DSS) - Field agent offline/mobile requirements - AI/ML use case prioritization needed - Quick wins identification for sales/distribution - CDP vs traditional CRM considerations per RFP emphasis",12,18,15,FALSE,,,,,
+,20. Solution Evaluation,20. System-Agnostic Solution Landscape Analysis,"As the VAFB team, we need to understand the full range of available solutions including traditional CRMs, CDPs, and analytics-led approaches as emphasized in our RFP.","20. A8 will research and document solution landscape including: traditional cloud CRMs (Salesforce, Microsoft Dynamics 365, HubSpot, Oracle CX Cloud), CDPs (Salesforce Data Cloud, Segment), data/analytics platforms (Microsoft Fabric/Power BI, Databricks, Snowflake, AWS Redshift, Google BigQuery), and composable/hybrid approaches. Create comparison framework.",20. - RFP emphasizes system-agnostic approach - CDP vs CRM understanding needed - Build vs Buy considerations (custom solutions on data platforms vs packaged CRM) - Best-of-Breed vs Suite philosophy to be determined - Composable/modular architecture openness to be assessed - Microsoft-centric preference may influence but not limit options - Current Power BI usage with Co-Pilot,18,24,21,FALSE,,,,,
+,2Solution Evaluation,2Target Architecture Design,"As the VAFB team, we need to define our target CRM architecture including integration patterns, data flows, and technology stack recommendations.","2A8 will design future state technical architecture including: proposed CRM/CDP solution architecture, integration patterns with Finys, Personify, NetSuite, HubSpot Health, data flow diagrams, customer 360 approach across insurance and membership, API strategy, middleware requirements, and analytics layer design.","2- Must integrate with: Finys (insurance), Personify (membership), NetSuite (accounting), One Inc (payments) - Potentially integrate with: existing HubSpot (Health dept) - Enterprise data warehouse (ODS) may continue role or be enhanced - Microsoft-centric preference - Current integrations: point-to-point APIs, ETL, manual entry - Need unified customer view across insurance and membership entities - AI/ML capability requirements - Security and compliance requirements for controlled data",18,24,21,FALSE,,,,,
+,2Solution Evaluation,2Evaluation Criteria Development,"As the VAFB team, we need to establish objective evaluation criteria and scoring methodology for comparing CRM solutions.","2A8 will facilitate workshops to define: functional fit criteria (Marketing, Sales, Service, Analytics), technical criteria (integration, security, scalability), vendor criteria (financial stability, support, partnership ecosystem), usability/adoption factors, and AI/ML capabilities. Create weighted scoring matrix aligned to VAFB priorities.",2- System-agnostic evaluation required - Multiple stakeholder perspectives to balance - Insurance regulatory compliance requirements - Field agent usability critical - Integration complexity with Finys and Personify - Microsoft ecosystem compatibility preferred - TCO and ROI analysis required - Implementation complexity and timeline considerations,12,15,14,FALSE,,,,,
+,2Solution Evaluation,2Candidate Solution Identification & Shortlisting,"As the VAFB team, we need to identify candidate solutions that align with our requirements and evaluation criteria, then shortlist finalists for deeper evaluation.","2A8 will research potential solutions across traditional CRM and CDP/analytics-led approaches, conduct preliminary scoring against criteria, engage with vendor representatives for initial discovery calls, and facilitate shortlisting workshops to select 3-4 finalists for detailed evaluation.","2- RFP mentions examples: Salesforce, Microsoft Dynamics 365, HubSpot, Oracle CX Cloud (CRMs) - RFP mentions examples: Microsoft Fabric/Power BI, Databricks, Snowflake, AWS Redshift, Google BigQuery, Salesforce Data Cloud, Segment (CDP/Analytics) - Must maintain system-agnostic approach - Vendor financial stability important - Local/regional vendor support may be consideration - Insurance industry experience preferred",15,20,18,FALSE,,,,,
+,2Solution Evaluation,2Vendor Demonstrations & Deep Dives,"As the VAFB team, we need to see finalist solutions in action with demos tailored to our specific use cases and requirements.","2A8 will coordinate vendor demonstrations for shortlisted solutions, create demo script based on priority use cases (member enrollment, policy quote-to-bind, agent workflows, omnichannel campaigns), facilitate vendor Q&A sessions, and document feedback from stakeholder attendees for each solution.",2- 10-12 stakeholder groups need to participate in demos - Use cases should reflect priority journeys - Field agent workflows critical to demonstrate - Insurance and membership use cases required - Integration capabilities demonstration needed - AI/ML capabilities showcase - Multiple demo sessions may be required for distributed stakeholders,18,24,21,FALSE,,,,,
+,2Solution Evaluation,2Technical Due Diligence & POCs,"As the VAFB team, we need to validate technical feasibility of finalist solutions through proof of concepts focused on our most complex integration and data requirements.","2A8 will work with IT team and vendors to conduct technical due diligence including: integration feasibility with Finys and Personify (may require POCs), data migration complexity assessment, security and compliance validation, performance and scalability testing plan, and custom development requirements evaluation.","2- Complex integration with Finys (insurance policy admin) critical - Personify (membership) integration critical - Enterprise data warehouse (ODS) integration - NetSuite (accounting) integration - Controlled data (HIPAA, PII, PCI) security requirements - Data migration complexity from multiple source systems - Microsoft-centric environment compatibility - POCs may be required for highest-risk integrations",18,24,21,FALSE,,,,,
+,2Solution Evaluation,2Total Cost of Ownership (TCO) Analysis,"As the VAFB team, we need to understand the complete financial impact of each solution option including licensing, implementation, integration, and ongoing costs.","2A8 will develop comprehensive TCO models for finalist solutions including: software licensing costs (user-based, platform fees), implementation services estimates, integration development costs, data migration costs, training costs, internal resource requirements, ongoing support/maintenance, infrastructure costs, and 5-year total cost projections.","2- Implementation budget range to be defined by VAFB - Subscription vs perpetual licensing considerations - Implementation partner costs separate from platform costs - Integration complexity impacts TCO significantly (Finys, Personify) - Training costs for distributed field organization - Potential new roles to support system - Managed services vs in-house support considerations - Microsoft licensing synergies may exist",12,15,14,FALSE,,,,,
+,2Solution Evaluation,2Return on Investment (ROI) Analysis,"As the VAFB team, we need to project the business value and ROI of CRM investment aligned to our strategic objectives.","2A8 will develop ROI models showing projected benefits including: revenue growth from improved sales effectiveness and lead conversion, member retention improvements, operational efficiency gains, cost savings from process automation and system consolidation, and time-to-value for quick wins. Define success metrics for 12, 24, and 36 months.","2- Strategic outcomes defined: Member Engagement, Policy Holder Engagement, Lead Generation, Communications, Profitable Insurance Growth, Producer Motivation, Agricultural community engagement
+- Quick wins focused on sales and distribution
+- Revenue growth targets to be defined
+- Member retention rate improvements to be measured
+- Market expansion opportunities
+- Operational efficiency expectations
+- Success metrics at 12, 24, 36 months",12,15,14,FALSE,,,,,
+,2Solution Evaluation,2Risk Assessment & Mitigation Planning,"As the VAFB team, we need to identify and plan for risks associated with each solution option including technology maturity, implementation complexity, and change magnitude.","2A8 will conduct risk assessment for finalist solutions covering: technology maturity (proven vs emerging), implementation complexity and timeline risks, integration risks with legacy systems, data migration risks, change management and adoption risks, vendor stability and support risks, and develop mitigation strategies for each.","2- Risk vs value approach to change
+- High implementation complexity expected
+- High change magnitude expected
+- Multiple affiliated companies and regions
+- Distributed field organization adoption
+- Integration with Finys and Personify (complex/customized)
+- Data quality and migration risks
+- Regulatory compliance risks (insurance, HIPAA)
+- Historical transformation lessons learned to apply",12,15,14,FALSE,,,,,
+,2Solution Selection,2Solution Selection & Recommendation,"As the VAFB team, we need to synthesize all evaluation findings into a clear recommendation with executive presentation.","2A8 will synthesize evaluation results, create final scoring and ranking of solutions, develop executive recommendation presentation including rationale, TCO/ROI summary, risk assessment, and implementation considerations. Facilitate executive decision session and document final selection.","2- Final decision makers: CEO & President of VAFB, Executive VP of Mutual Insurance Company, Executive VP of Healthcare, CTO, VP of Marketing, Director of Member Engagement, VP of Insurance
+- Governance structure defined
+- Executive reporting cadence established
+- Decision criteria weighted to VAFB priorities
+- System-agnostic recommendation required",15,20,18,FALSE,,,,,
+,30. Implementation Planning,30. Phased Implementation Roadmap Development,"As the VAFB team, we need a realistic, phased roadmap that sequences implementation across business units with quick wins and long-term milestones.","30. A8 will develop comprehensive implementation roadmap including: Phase 0 (quick wins for sales/distribution within 90 days), Phase 1 (priority business units), Phase 2+ (remaining business units and advanced capabilities), timeline estimates, dependencies, resource requirements, and go/no-go decision gates.","30. - Quick wins defined as: 90-day timeframe, impact on sales and distribution
+- Priority business units: Member Engagement (New & Renewal), Policy Services, Claims, Accounts Payable
+- Multiple affiliated companies to phase in
+- Geographic regions to sequence
+- Quick wins identification: overarching CRM strategy and roadmap, shortlist of tools/applications, identification of teams for applying CRM disciplines
+- Short-, medium-, and long-term milestones needed",15,20,18,FALSE,,,,,
+,3Implementation Planning,3AI/ML Use Case Prioritization & Roadmap,"As the VAFB team, we need to define our AI/ML roadmap aligned to CRM capabilities and business priorities.","3A8 will work with stakeholders to define top 3-5 priority AI use cases, assess AI/ML capabilities of selected CRM solution, develop AI/ML roadmap including: predictive analytics for member/policy retention, lead scoring and routing, chatbots and self-service, personalization engines, claims prediction, and define data/analytics foundation required.","3- Current AI usage: Robotic processing, individual Co-Pilot, Power BI Co-Pilot
+- AI pilots at various levels
+- AI Governance Committee in process of being established
+- Use cases likely to involve LLM and Agentic AI across multiple business areas including CRM
+- Strategic outcome: meaningful value-based engagement and personalization
+- AI-driven support for member portal desired
+- Hyper-personalization goals",12,15,14,FALSE,,,,,
+,3Implementation Planning,3Data Migration Strategy & Planning,"As the VAFB team, we need a comprehensive data migration strategy for moving customer data from Finys, Personify, and other systems to the new CRM.","3A8 will develop data migration strategy including: data mapping from source systems (Finys, Personify, NetSuite, HubSpot), data cleansing and transformation requirements, historical data retention decisions, migration approach (big bang vs phased), cutover planning, rollback procedures, and data validation strategy.","3- Source systems: Finys (insurance), Personify (membership), NetSuite (accounting), HubSpot (Health dept), One Inc
+- Enterprise data warehouse (ODS) may play role in migration
+- Customer data siloed - no current single view
+- Controlled data (HIPAA, PII, PCI) requires special handling
+- Multiple affiliated companies and regions
+- Data quality assessment completed during discovery
+- Data classification inventory available",12,18,15,FALSE,,,,,
+,3Implementation Planning,3Integration Architecture & Specifications,"As the VAFB team, we need detailed integration specifications to include in the implementation RFP for connecting the new CRM with existing systems.","3A8 will document integration requirements including: Finys integration specifications (policy data, quotes, claims), Personify integration specifications (member data, renewals, benefits), NetSuite integration (billing, accounting), One Inc integration (payments), integration patterns (real-time vs batch), middleware requirements, API specifications, error handling, and data synchronization rules.","3- Complex Finys integration (insurance policy admin)
+- Personify integration (membership) - customized connection with Finys
+- NetSuite integration (accounting/billing)
+- One Inc integration (payments)
+- Potential HubSpot integration (Health department)
+- Enterprise data warehouse (ODS) role to be defined
+- Current integration methods: point-to-point APIs, ETL, manual entry
+- Microsoft-centric environment
+- Data governance framework being established",18,24,21,FALSE,,,,,
+,3Implementation Planning,3Change Management & Training Strategy,"As the VAFB team, we need a comprehensive change management and training strategy to ensure successful adoption across our distributed organization.","3A8 will develop change management strategy including: stakeholder communication plan (leveraging new Intranet and weekly digests), training approach for distributed field organization (agents, MSS), super-user/champion network development, role-based training curriculum outline, adoption metrics and monitoring, and resistance mitigation strategies.","3- In-house training department exists (focuses on MSS and Agent workforce)
+- New VAFB Intranet launching December 2025 for communications
+- Weekly digests to field staff
+- Distributed field organization (agents, MSS, call center)
+- Natural champions identified in business units
+- Multiple affiliated companies and regions
+- Various levels of technical sophistication
+- High change magnitude expected
+- Resistance factors identified during discovery",12,15,14,FALSE,,,,,
+,3Implementation Planning,3Data Governance & Master Data Management Framework,"As the VAFB team, we need to establish data governance and MDM frameworks to support CRM implementation and ongoing data quality.","3A8 will define data governance framework including: data ownership and stewardship model, data quality standards and monitoring, master data management approach for unified customer records across insurance/membership, data lifecycle policies, data access and security protocols, and governance committee structure.","3- Enterprise data governance effort currently underway
+- Data classification inventory completed
+- Data Services team exists
+- No current single customer view
+- Customer data siloed across multiple systems
+- Multiple affiliated companies may serve same customer
+- Controlled data (HIPAA, PII, PCI) governance required
+- Data retention policies needed by data type",9,12,11,FALSE,,,,,
+,3RFP Preparation,3Implementation Partner RFP Development,"As the VAFB team, we need a comprehensive RFP to select the right implementation partner for executing our CRM strategy.","3A8 will develop complete implementation partner RFP including: project scope and objectives, selected solution specifications, phased implementation roadmap, integration requirements, data migration requirements, change management expectations, required qualifications and experience, evaluation criteria, pricing structure, timeline expectations, and deliverables.","3- RFP must specify selected CRM solution
+- Integration requirements with Finys, Personify, NetSuite documented
+- Phased roadmap approach defined
+- Quick wins for sales/distribution emphasized
+- Change management requirements included
+- Training strategy outlined
+- Insurance industry experience preferred
+- Local/regional presence may be preferred (Richmond, VA)
+- On-site presence requirements at West Creek Office Park",15,20,18,FALSE,,,,,
+,3RFP Preparation,3Implementation Partner Evaluation Criteria,"As the VAFB team, we need objective criteria to evaluate implementation partner proposals beyond standard technical qualifications.","3A8 will develop implementation partner evaluation criteria including: relevant industry experience (insurance, membership organizations, multi-entity), technical expertise with selected solution, integration experience (Finys, Personify, similar systems), change management capabilities, training approach, local/regional presence, project team structure, implementation methodology, references, and pricing.","3- Insurance industry experience preferred
+- Regulated environments experience required
+- Complex, multi-entity organization experience needed
+- Change management at enterprise scale required
+- Local/regional presence strongly preferred (Richmond, VA)
+- On-site collaboration requirements
+- Experience with selected CRM platform
+- Integration expertise critical (Finys, Personify)
+- Distributed field organization training experience",9,12,11,FALSE,,,,,
+,3RFP Preparation,3Implementation Vendor Selection Support,"As the VAFB team, we need support facilitating the implementation partner selection process including proposal evaluation and vendor interviews.","3A8 will support implementation vendor selection including: manage RFP distribution and questions, facilitate proposal review sessions with stakeholders, conduct reference checks, coordinate vendor interviews/presentations, apply evaluation scoring, facilitate final selection decision, and support contract negotiations.","3- VAFB has defined procurement process timeline and approval requirements
+- Contract structure preferences to be confirmed
+- Licensing models (subscription vs perpetual) preferred
+- Committed term lengths to be defined
+- Service level expectations for ongoing vendor support
+- Final decision makers identified
+- Governance structure established",12,15,14,FALSE,,,,,
+,3Transition & Handoff,3Implementation Partner Transition & Handoff,"As the VAFB team, we need a smooth transition from strategic planning to implementation with comprehensive knowledge transfer.","3A8 will facilitate handoff to implementation partner including: transition planning session, comprehensive deliverables handoff (discovery findings, requirements, architecture, roadmap, RFP documentation), knowledge transfer sessions, identification of A8's ongoing advisory role (if any), and establish communication protocols between VAFB, A8, and implementation partner.","3- Handoff expectations to be defined
+- Most critical deliverables for smooth handoff to be prioritized
+- Ongoing advisory role during implementation to be determined vs complete handoff
+- VAFB may expect strategy partner involvement during implementation
+- Implementation expected to be complex given multi-entity environment
+- Change management continuity important",9,12,11,FALSE,,,,,
+,40. Executive Reporting,40. Executive Status Reporting & Governance,"As the VAFB team, we need consistent executive reporting throughout the engagement to maintain alignment and enable timely decisions.","40. A8 will provide executive reporting including: bi-weekly or monthly status reports, executive dashboard with key milestones and risks, decision logs, stakeholder feedback synthesis, budget and timeline tracking, and facilitate executive steering committee meetings throughout engagement.","40. - Executive stakeholders: President/CEO, Executive VPs, CTO, VPs of Marketing/Sales/Claims, Directors
+- Major priority from executive level
+- No expected delays from executive sponsors
+- Executive reporting cadence to be established at kickoff
+- Decision-making governance structure defined
+- Risks and issues escalation process needed
+- Throughout 6+ month engagement",6,9,8,FALSE,,,,,
+,4Program Management,4Program Management & Coordination,"As the VAFB team, we need dedicated program management to coordinate stakeholders, manage timeline, and ensure engagement success.","4A8 CRM Program Manager will provide ongoing program management including: stakeholder coordination across 10-12 groups, workshop facilitation, timeline and milestone tracking, risk and issue management, vendor coordination (for demos and evaluations), documentation management, and serve as primary point of contact for VAFB project team.","4- CRM Program Manager is defined role per RFP
+- Not expected to be full-time dedicated (per VAFB response)
+- Coordination of 10-12 stakeholder groups
+- Multiple workshops and interviews
+- Vendor coordination for 3-4 finalist evaluations
+- On-site presence required for key milestones at West Creek Office Park, Richmond VA
+- Hybrid/remote work between on-site sessions
+- 6+ month engagement timeline
+- Primary contact with Jason Hart (Director Membership Projects) and project team",12,15,14,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,
+,,,,,,,,,FALSE,,,,,

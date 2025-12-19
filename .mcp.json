@@ -1,0 +1,15 @@
+{
+    "mcpServers":  {
+                       "exa":  {
+                                   "type":  "stdio",
+                                   "command":  "npx",
+                                   "args":  [
+                                                "-y",
+                                                "exa-mcp-server"
+                                            ],
+                                   "env":  {
+                                               "EXA_API_KEY":  "93d677be-aafa-4548-ae12-08a4c3e65f78"
+                                           }
+                               }
+                   }
+}

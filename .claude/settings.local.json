@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python compare_sbir_lists.py:*)",
+      "Bash(python:*)",
+      "Bash(dir:*)",
+      "Bash(move \"c:\\Users\\mark\\Downloads\\a8\\.claude\\skills\\feai-brand\" \"c:\\Users\\mark\\Downloads\\a8\\.claude\\skills\\a8-brand\")",
+      "Skill(markitdown)",
+      "Bash(where:*)",
+      "Bash(python3:*)",
+      "Bash(powershell:*)",
+      "Bash(pandoc:*)",
+      "Bash(node \".claude/skills/int2/scripts/generate_docx.js\":*)",
+      "Bash(npm install:*)",
+      "Bash(del \"c:\\Users\\mark\\Downloads\\a8\\temp_summary.json\")",
+      "SlashCommand(/int2 revprep revprep_summary.md)",
+      "SlashCommand(/int2:*)",
+      "Bash(del \"c:\\Users\\mark\\Downloads\\a8\\nul\")",
+      "Bash(pip install:*)",
+      "Bash(node scripts/generate.js:*)",
+      "Bash(del \"c:\\Users\\mark\\Downloads\\a8\\Taoglas\\12.11 Reporting Workshop Summary.docx\")",
+      "Bash(node:*)",
+      "Bash(move:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,12 @@
+﻿# Ignore system/reserved and local env
+nul
+.env
+
+# Dependencies and build artifacts
+node_modules/
+runs/
+site/.cache/
+
+# Large assets not tracked in Git
+quince/Quince _ High Quality Essentials, Radically Low Prices.pdf
+

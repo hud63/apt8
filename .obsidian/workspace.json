@@ -1,0 +1,231 @@
+{
+  "main": {
+    "id": "45563a7c4cdd48e6",
+    "type": "split",
+    "children": [
+      {
+        "id": "abae5317f556bd29",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "addaec9bcafd53d2",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "596d9e239f7788eb",
+    "type": "split",
+    "children": [
+      {
+        "id": "552750421dcf071d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fba8d53ab0a876a8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "7688902446f503ce",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "93515b91d8dce020",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "773b4b53e85b0334",
+    "type": "split",
+    "children": [
+      {
+        "id": "22c808c41da41e47",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2b525769e69343ca",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Taryn/Reverse Demo Structure and Questions.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Reverse Demo Structure and Questions"
+            }
+          },
+          {
+            "id": "847ae315bf3e199d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Taryn/Reverse Demo Structure and Questions.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Reverse Demo Structure and Questions"
+            }
+          },
+          {
+            "id": "ad4e438d19d7c363",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "f4baba79b26e44ac",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "ebff1400988574b7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Taryn/Reverse Demo Structure and Questions.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Reverse Demo Structure and Questions"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "fba8d53ab0a876a8",
+  "lastOpenFiles": [
+    "Taoglas/12.19 Flash_Taoglas_Tech_Discovery_Summary.docx",
+    "Taoglas/12.19 Taoglas_Tech_Discovery_Summary.docx",
+    "temp_a8_taoglas_doc.ts",
+    "Taoglas/12.19 Taoglas_Tech_Discovery_Summary.md",
+    "Taoglas/12.19 Flash_Taoglas_Tech_Discovery_Summary.md",
+    "Taoglas/12.19 Taoglas Technical Architecture Confirmation.md",
+    "WhistleExpress/Whistle_Express_Account_Prep_Doc.md",
+    "Acct_Prep_Prompt_Template.md",
+    "WhistleExpress/11.24.md",
+    "WhistleExpress",
+    "VAFB/VAFB_Account_Prep_Doc.md",
+    "JLG/JLG_Account_Prep_Doc.md",
+    "Enterprise Level 10/12.18.md",
+    "Enterprise Level 10/12.11.md",
+    "VAFB/input_dump.txt",
+    "VAFB/dump_input.py",
+    "VAFB/read_input_v3.py",
+    "VAFB/read_input_v2.py",
+    "VAFB/read_input.py",
+    "VAFB/search_info.py",
+    "VAFB/VAFB - Customer Stories.xlsx",
+    "abundance360/Ashley's Email Recap of Strategy Sync 12.17.25.md",
+    "Greenix/Greenix_Account_Prep.md",
+    "Greenix/Discovery Transcripts folder.md",
+    "abundance360/Abundance360_ScopePt1_Explanation.md",
+    "ENT Weekly/12.17 ENT - Midweek Check-in.md",
+    "abundance360/12.17 Abundance360_Strategy_Sync_Summary.md",
+    "abundance360/Abundance360 - Feasibility Report for Abundance and Event Hubs.md",
+    "Abundance360_Strategy_Sync_Summary.md",
+    "abundance360/12.17 A360 Strategy Sync.md",
+    "Onboarding/HubSpot custom code actions.md",
+    "Onboarding/12.16 Taryn Weekly.md",
+    "Onboarding/12.16 Qs for Taryn.md",
+    "Onboarding/Questions for Taryn - 12.16 follow-up.md",
+    "Onboarding/Questions for Taryn - 12.16.md",
+    "Enterprise Weekly/12.16 Weekly Project Review Strategy.md",
+    "a8-temp/assets/taoglas_logo.png",
+    "a8-temp/assets/sample_page_layout.jpg",
+    "a8-temp/a8-temp/assets/taoglas_logo.png",
+    "a8-temp/a8-temp/assets/sample_page_layout.jpg",
+    "temp_forcebrands_unpacked/word/media/image2.png",
+    "temp_forcebrands_unpacked/word/media/image1.png",
+    "temp_taoglas_unpacked/word/media/image1.png",
+    "Interview Agendas/InitialDiscoverySummary_extracted/word/media/image1.png",
+    "PMP Lucid/pmp.png",
+    "pmp.png"
+  ]
+}
