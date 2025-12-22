@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HubSpot CRM Architecture: A Visual Guide</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Custom Palette & Styles -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0F172A',   /* Deep Navy */
+                            primary: '#3B82F6', /* Electric Blue */
+                            secondary: '#06B6D4', /* Vibrant Cyan */
+                            accent: '#F97316',  /* Energetic Orange */
+                            light: '#F8FAFC',   /* Slate 50 */
+                            white: '#FFFFFF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Chart Container Styling - MANDATORY */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px; /* Limits width on large screens */
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px; /* Base height */
+            max-height: 400px;
+        }
+        
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+
+        /* Custom Scrollbar for a clean look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+
+        /* Flow Diagram Styling (CSS Only - No SVG) */
+        .flow-arrow {
+            display: inline-block;
+            width: 0; 
+            height: 0; 
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 15px solid #0F172A;
+        }
+        .flow-line {
+            width: 2px;
+            background-color: #cbd5e1;
+            flex-grow: 1;
+        }
+        .flow-connector {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+        }
+    </style>
+    <!-- 
+        Palette Used: "Vibrant Tech" 
+        Dark: #0F172A
+        Primary: #3B82F6
+        Secondary: #06B6D4
+        Accent: #F97316
+    -->
+    <!-- 
+        Plan Narrative:
+        1. Intro: High-level view of HubSpot as a central data hub.
+        2. Core Objects: Visual hierarchy of Companies, Deals, Contacts. Lead vs Deal comparison.
+        3. The Pipeline: Funnel chart visualizing the stages (Qual -> Won).
+        4. Automation: CSS-based flowchart explaining Triggers and Workflows.
+        5. Analysis: Charts for Deal Aging and Revenue Split.
+        6. Integrations: Integration flow for Quoting/CPQ.
+    -->
+    <!-- CONFIRMATION: NEITHER Mermaid JS NOR SVG were used in this output. -->
+</head>
+<body class="bg-brand-light text-brand-dark font-sans leading-relaxed">
+
+    <!-- Header Section -->
+    <header class="bg-brand-dark text-white py-12 px-4 shadow-lg">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight">HubSpot CRM Ecosystem</h1>
+            <p class="text-xl text-brand-secondary max-w-2xl mx-auto">A visual breakdown of Pipelines, Objects, Automation, and Reporting structure.</p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto p-6 space-y-12">
+
+        <!-- SECTION 1: CORE STRUCTURE -->
+        <section>
+            <div class="mb-6 border-l-4 border-brand-primary pl-4">
+                <h2 class="text-3xl font-bold text-brand-dark">01. Core Objects & Structure</h2>
+                <p class="text-gray-600 mt-2">HubSpot organizes data hierarchically. Understanding the distinction between Objects (Entities) and Records (Specific entries) is fundamental.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Object Hierarchy Card -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold text-brand-primary mb-4 flex items-center">
+                        <span class="text-2xl mr-2">🏢</span> The Hierarchy
+                    </h3>
+                    <div class="flex flex-col items-center space-y-4">
+                        <!-- Company -->
+                        <div class="w-full bg-brand-dark text-white p-4 rounded-lg text-center relative">
+                            <h4 class="font-bold">Company Record</h4>
+                            <p class="text-xs text-gray-300">The Parent Object (e.g., "Acme Corp")</p>
+                        </div>
+                        
+                        <!-- Connector -->
+                        <div class="h-8 w-1 bg-gray-300"></div>
+                        
+                        <!-- Children Container -->
+                        <div class="flex w-full space-x-4">
+                            <!-- Contact -->
+                            <div class="flex-1 bg-brand-secondary text-white p-4 rounded-lg text-center">
+                                <h4 class="font-bold">Contacts</h4>
+                                <p class="text-xs text-white/90">People (e.g., "John Doe")</p>
+                            </div>
+                            <!-- Deal -->
+                            <div class="flex-1 bg-brand-accent text-white p-4 rounded-lg text-center">
+                                <h4 class="font-bold">Deals</h4>
+                                <p class="text-xs text-white/90">Revenue Opps (e.g., "Q4 License")</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6 bg-blue-50 p-4 rounded border border-blue-100">
+                        <p class="text-sm text-gray-700"><strong>Use Case:</strong> Sales reps associate multiple contacts and deals to a single Company record to track total account value.</p>
+                    </div>
+                </div>
+
+                <!-- Leads vs Deals Comparison -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold text-brand-primary mb-4">Lead vs. Deal</h3>
+                    <p class="text-gray-600 mb-4 text-sm">A critical distinction in the sales process.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full bg-brand-secondary flex items-center justify-center text-white font-bold text-lg mr-4">L</div>
+                            <div class="flex-1">
+                                <h4 class="font-bold text-brand-dark">Lead (Prospect)</h4>
+                                <p class="text-sm text-gray-600">A person/company that <em>might</em> buy. Often lives in the "Marketing" stage.</p>
+                            </div>
+                        </div>
+                        <div class="w-full border-t border-gray-100"></div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full bg-brand-accent flex items-center justify-center text-white font-bold text-lg mr-4">D</div>
+                            <div class="flex-1">
+                                <h4 class="font-bold text-brand-dark">Deal (Opportunity)</h4>
+                                <p class="text-sm text-gray-600">A qualified potential transaction. Has a dollar amount ($) and a close date.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                         <h4 class="font-bold text-sm text-brand-dark mb-2">Custom Objects & Properties</h4>
+                         <ul class="list-disc list-inside text-sm text-gray-600 space-y-1">
+                             <li><strong>Custom Objects:</strong> Data unique to your business (e.g., "Shipments", "Subscriptions").</li>
+                             <li><strong>Custom Properties:</strong> Fields tailored to data needs (e.g., "Preferred Delivery Date").</li>
+                         </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: PIPELINES & STAGES -->
+        <section>
+            <div class="mb-6 border-l-4 border-brand-primary pl-4">
+                <h2 class="text-3xl font-bold text-brand-dark">02. The Sales Pipeline</h2>
+                <p class="text-gray-600 mt-2">Visualizing the journey of a Deal. The standard pipeline moves from Qualification to Closed Won, with probability increasing at each step.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                
+                <!-- CHART: Funnel Visualization -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-lg font-bold text-brand-dark mb-2">Deal Volume by Stage (Funnel)</h3>
+                    <p class="text-xs text-gray-500 mb-4">Simulated data showing the typical attrition rate in a sales funnel.</p>
+                    <div class="chart-container">
+                        <canvas id="pipelineFunnelChart"></canvas>
+                    </div>
+                    <!-- Chart Explanation -->
+                    <div class="mt-4 p-3 bg-gray-50 rounded text-sm text-gray-700">
+                        <p><strong>Insight:</strong> The funnel shape visually represents conversion health. A wide top indicates strong lead generation, while a narrow bottom highlights where deals drop off (e.g., between Evaluation and Review).</p>
+                    </div>
+                </div>
+
+                <!-- Text Content: Stage Definitions -->
+                <div class="space-y-4">
+                    <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-brand-secondary">
+                        <h4 class="font-bold text-brand-dark">1. Qualification</h4>
+                        <p class="text-sm text-gray-600">Initial vetting. Does the prospect have budget and authority?</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-brand-secondary">
+                        <h4 class="font-bold text-brand-dark">2. Initial Evaluation</h4>
+                        <p class="text-sm text-gray-600">Discovery calls and demos. The prospect is actively assessing the solution.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-brand-primary">
+                        <h4 class="font-bold text-brand-dark">3. Quote Issued / Design Reg.</h4>
+                        <p class="text-sm text-gray-600">Formal pricing is presented. In complex sales, "Design Registration" locks in specs.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-brand-accent">
+                        <h4 class="font-bold text-brand-dark">4. Closed Won / Lost</h4>
+                        <p class="text-sm text-gray-600">The terminal stages. <strong>Won</strong> = Revenue booked. <strong>Lost</strong> = Reason required (e.g., Price, Competitor).</p>
+                    </div>
+                    <div class="mt-4 text-sm text-brand-dark font-semibold">
+                        ℹ️ Unified Pipelines allow viewing deals from different sales teams in one master view.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: AUTOMATION & WORKFLOWS -->
+        <section class="bg-blue-50 -mx-6 px-6 py-12">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-6 border-l-4 border-brand-accent pl-4">
+                    <h2 class="text-3xl font-bold text-brand-dark">03. Automation & Logic</h2>
+                    <p class="text-gray-600 mt-2">Workflows automate manual tasks based on "Triggers". This removes friction and ensures process adherence.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Diagram: Workflow Logic -->
+                    <div class="lg:col-span-2 bg-white rounded-lg shadow-md p-8">
+                        <h3 class="text-xl font-bold text-brand-dark mb-6 text-center">Anatomy of a Deal Workflow</h3>
+                        
+                        <!-- CSS Flowchart -->
+                        <div class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 relative">
+                            
+                            <!-- Trigger -->
+                            <div class="flex flex-col items-center w-full md:w-1/4">
+                                <div class="w-full bg-brand-primary text-white p-4 rounded shadow-lg text-center z-10">
+                                    <span class="text-2xl block mb-1">⚡</span>
+                                    <strong class="block uppercase text-xs tracking-wider">Trigger</strong>
+                                    <span class="text-sm">Deal Stage changes to "Closed Won"</span>
+                                </div>
+                            </div>
+
+                            <!-- Arrow -->
+                            <div class="hidden md:flex flex-col items-center justify-center w-1/4">
+                                <div class="h-1 bg-gray-300 w-full"></div>
+                            </div>
+                            <div class="md:hidden h-8 w-1 bg-gray-300"></div>
+
+                            <!-- Action 1 -->
+                            <div class="flex flex-col items-center w-full md:w-1/4">
+                                <div class="w-full bg-white border-2 border-brand-secondary text-brand-dark p-4 rounded shadow-md text-center z-10">
+                                    <span class="text-2xl block mb-1">📝</span>
+                                    <strong class="block uppercase text-xs tracking-wider">Task</strong>
+                                    <span class="text-sm">Create "Onboarding" Task for CS</span>
+                                </div>
+                            </div>
+
+                            <!-- Arrow -->
+                            <div class="hidden md:flex flex-col items-center justify-center w-1/4">
+                                <div class="h-1 bg-gray-300 w-full"></div>
+                            </div>
+                            <div class="md:hidden h-8 w-1 bg-gray-300"></div>
+
+                            <!-- Action 2 -->
+                            <div class="flex flex-col items-center w-full md:w-1/4">
+                                <div class="w-full bg-white border-2 border-brand-accent text-brand-dark p-4 rounded shadow-md text-center z-10">
+                                    <span class="text-2xl block mb-1">📧</span>
+                                    <strong class="block uppercase text-xs tracking-wider">Email</strong>
+                                    <span class="text-sm">Send "Welcome" Sequence</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <div class="mt-8 text-center text-sm text-gray-500 italic">
+                            Simple Analogy: "If This (Trigger), Then That (Action)."
+                        </div>
+                    </div>
+
+                    <!-- Definitions Card -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-lg font-bold text-brand-dark mb-4">Key Terms</h3>
+                        <ul class="space-y-4">
+                            <li class="p-3 bg-gray-50 rounded">
+                                <strong class="text-brand-primary block">Workflows</strong>
+                                <span class="text-sm text-gray-600">Internal automation. E.g., moving a deal stage automatically when a contract is signed.</span>
+                            </li>
+                            <li class="p-3 bg-gray-50 rounded">
+                                <strong class="text-brand-primary block">Sequences</strong>
+                                <span class="text-sm text-gray-600">External 1-to-1 email automation. A series of timed emails sent to a prospect to get a reply.</span>
+                            </li>
+                            <li class="p-3 bg-gray-50 rounded">
+                                <strong class="text-brand-primary block">Task Automation</strong>
+                                <span class="text-sm text-gray-600">Recurring reminders. E.g., "Follow up every 3 days if no reply."</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: ANALYSIS & REPORTING -->
+        <section>
+            <div class="mb-6 border-l-4 border-brand-primary pl-4">
+                <h2 class="text-3xl font-bold text-brand-dark">04. Reporting & Health</h2>
+                <p class="text-gray-600 mt-2">Managers use "Views" and "Reports" to track velocity and value. Identifying bottlenecks is key to revenue health.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- CHART: Deal Aging -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-lg font-bold text-brand-dark">Deal Aging (Time in Stage)</h3>
+                        <span class="bg-brand-light text-xs font-mono py-1 px-2 rounded">Goal: &lt; 15 Days</span>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="dealAgingChart"></canvas>
+                    </div>
+                    <p class="mt-4 text-sm text-gray-600">
+                        <strong>The "Stagnation" Problem:</strong> This chart highlights where deals get stuck. In this data, "Initial Evaluation" is taking 25 days—a clear bottleneck requiring coaching.
+                    </p>
+                </div>
+
+                <!-- CHART: Revenue Composition -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-lg font-bold text-brand-dark mb-4">Deal Amount vs. Lifetime Value</h3>
+                    <div class="chart-container">
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+                    <div class="mt-4 space-y-2 text-sm text-gray-600">
+                        <p><strong>Deal Amount:</strong> The value of the specific contract currently in the pipeline.</p>
+                        <p><strong>Lifetime Revenue:</strong> The total projected value including renewals and upsells. CRM data helps prioritize deals with higher long-term potential.</p>
+                    </div>
+                </div>
+
+                <!-- Feature Highlihgts: Board View & Tags -->
+                <div class="md:col-span-2 bg-white rounded-lg shadow-md p-6 flex flex-col md:flex-row gap-6">
+                    <div class="flex-1">
+                        <h4 class="font-bold text-brand-primary mb-2">Board View (Kanban)</h4>
+                        <p class="text-sm text-gray-600 mb-2">A visual interface where deals are cards organized in columns (stages). Sales reps drag-and-drop cards to move stages.</p>
+                        <!-- CSS Micro-Kanban Visual -->
+                        <div class="flex space-x-2 mt-4 bg-gray-100 p-2 rounded h-24 overflow-hidden">
+                            <div class="w-1/3 bg-gray-200 rounded p-1 flex flex-col space-y-1">
+                                <div class="h-1 w-1/2 bg-gray-300 rounded"></div>
+                                <div class="h-6 bg-white rounded border border-gray-300 shadow-sm"></div>
+                                <div class="h-6 bg-white rounded border border-gray-300 shadow-sm"></div>
+                            </div>
+                            <div class="w-1/3 bg-gray-200 rounded p-1 flex flex-col space-y-1">
+                                <div class="h-1 w-1/2 bg-gray-300 rounded"></div>
+                                <div class="h-6 bg-white rounded border border-gray-300 shadow-sm"></div>
+                            </div>
+                            <div class="w-1/3 bg-gray-200 rounded p-1 flex flex-col space-y-1">
+                                <div class="h-1 w-1/2 bg-gray-300 rounded"></div>
+                                <div class="h-6 bg-white rounded border border-brand-primary shadow-sm ring-1 ring-blue-400"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex-1 border-t md:border-t-0 md:border-l border-gray-200 pt-4 md:pt-0 md:pl-6">
+                        <h4 class="font-bold text-brand-primary mb-2">Deal Tags</h4>
+                        <p class="text-sm text-gray-600 mb-4">Visual badges on deal cards to flag priority or risk.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-red-100 text-red-700 text-xs rounded font-bold border border-red-200">⚠️ Stalled > 30 Days</span>
+                            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded font-bold border border-green-200">🔥 Hot Lead</span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded font-bold border border-blue-200">🏢 Enterprise</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 5: INTEGRATIONS -->
+        <section class="mb-12">
+             <div class="mb-6 border-l-4 border-brand-accent pl-4">
+                <h2 class="text-3xl font-bold text-brand-dark">05. Integrations (CPQ)</h2>
+                <p class="text-gray-600 mt-2">HubSpot connects with specialized tools like Tacton for complex quoting.</p>
+            </div>
+
+            <div class="bg-brand-dark text-white rounded-lg shadow-xl p-8">
+                <h3 class="text-xl font-bold mb-6 text-brand-secondary">Tacton CPQ Integration Flow</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    
+                    <div class="p-4 border border-gray-600 rounded bg-gray-800">
+                        <div class="text-3xl mb-2">⚙️</div>
+                        <h4 class="font-bold text-white mb-2">1. Configuration</h4>
+                        <p class="text-xs text-gray-400">User configures complex product logic in Tacton (outside HubSpot).</p>
+                    </div>
+
+                    <div class="flex items-center justify-center">
+                        <span class="text-4xl text-brand-primary">➝</span>
+                    </div>
+
+                    <div class="p-4 border border-brand-primary rounded bg-gray-800 relative">
+                        <div class="absolute -top-3 -right-3 bg-brand-accent text-white text-xs font-bold px-2 py-1 rounded">Synced</div>
+                        <div class="text-3xl mb-2">📄</div>
+                        <h4 class="font-bold text-white mb-2">2. Quote-to-Deal</h4>
+                        <p class="text-xs text-gray-400">The generated quote attaches directly to the HubSpot Deal record.</p>
+                    </div>
+
+                </div>
+                
+                <div class="mt-8 bg-gray-800 p-4 rounded border border-gray-700">
+                    <h4 class="font-bold text-brand-accent text-sm mb-1">Warning: Field Limitations</h4>
+                    <p class="text-xs text-gray-300">
+                        Sometimes Distributor fields or deeply nested product data in Tacton do not map 1:1 to HubSpot's flat property structure. This often requires custom API middleware or simplified data mapping.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-200 text-center py-8">
+        <p class="text-gray-500 text-sm">&copy; 2025 HubSpot Research Visualized. Generated for Educational Purposes.</p>
+    </footer>
+
+    <!-- JAVASCRIPT FOR CHARTS -->
+    <script>
+        // --- UTILITY: Label Wrapping Logic ---
+        function wrapLabel(str, maxChars) {
+            if (str.length <= maxChars) return str;
+            const words = str.split(' ');
+            const lines = [];
+            let currentLine = words[0];
+
+            for (let i = 1; i < words.length; i++) {
+                if ((currentLine + " " + words[i]).length <= maxChars) {
+                    currentLine += " " + words[i];
+                } else {
+                    lines.push(currentLine);
+                    currentLine = words[i];
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        }
+
+        // --- UTILITY: Common Chart Options ---
+        const commonOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                tooltip: {
+                    backgroundColor: 'rgba(15, 23, 42, 0.9)',
+                    padding: 12,
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                                return label.join(' ');
+                            } else {
+                                return label;
+                            }
+                        }
+                    }
+                },
+                legend: {
+                    labels: {
+                        font: { family: 'Inter', size: 12 },
+                        color: '#334155'
+                    }
+                }
+            }
+        };
+
+        // --- CHART 1: Pipeline Funnel (Horizontal Bar) ---
+        const funnelCtx = document.getElementById('pipelineFunnelChart').getContext('2d');
+        const funnelLabels = ['Qualification', 'Initial Evaluation', 'Quote Issued', 'Final Review', 'Closed Won'];
+        const funnelData = [100, 75, 50, 30, 20]; // Mock attrition data
+
+        new Chart(funnelCtx, {
+            type: 'bar',
+            data: {
+                labels: funnelLabels.map(l => wrapLabel(l, 16)),
+                datasets: [{
+                    label: 'Deal Volume (%)',
+                    data: funnelData,
+                    indexAxis: 'y', // Makes it horizontal
+                    backgroundColor: [
+                        '#CBD5E1', // Gray
+                        '#94A3B8', 
+                        '#06B6D4', // Cyan
+                        '#3B82F6', // Blue
+                        '#F97316'  // Orange (Won)
+                    ],
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                ...commonOptions,
+                indexAxis: 'y',
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        max: 100,
+                        grid: { display: false }
+                    },
+                    y: {
+                        grid: { display: false }
+                    }
+                }
+            }
+        });
+
+        // --- CHART 2: Deal Aging (Bar) ---
+        const agingCtx = document.getElementById('dealAgingChart').getContext('2d');
+        const agingLabels = ['Qualification', 'Initial Evaluation', 'Quote Issued', 'Final Review'];
+        const agingData = [5, 25, 12, 8]; // Days in stage
+
+        new Chart(agingCtx, {
+            type: 'bar',
+            data: {
+                labels: agingLabels.map(l => wrapLabel(l, 16)),
+                datasets: [{
+                    label: 'Avg Days in Stage',
+                    data: agingData,
+                    backgroundColor: agingData.map(val => val > 15 ? '#EF4444' : '#3B82F6'), // Red if > 15 days
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                ...commonOptions,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Days' }
+                    },
+                    x: {
+                        grid: { display: false }
+                    }
+                }
+            }
+        });
+
+        // --- CHART 3: Revenue Composition (Doughnut) ---
+        const revenueCtx = document.getElementById('revenueChart').getContext('2d');
+        new Chart(revenueCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Initial Deal Value', 'Upsell / Expansion', 'Service Retainer'],
+                datasets: [{
+                    data: [60, 25, 15],
+                    backgroundColor: [
+                        '#0F172A', // Navy
+                        '#3B82F6', // Blue
+                        '#06B6D4'  // Cyan
+                    ],
+                    borderWidth: 0,
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                ...commonOptions,
+                cutout: '70%',
+                plugins: {
+                    ...commonOptions.plugins,
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>
