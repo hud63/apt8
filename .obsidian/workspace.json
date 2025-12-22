@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "abae5317f556bd29",
+        "id": "61a9980f19135916",
         "type": "tabs",
         "children": [
           {
-            "id": "addaec9bcafd53d2",
+            "id": "487d803eb542a7b3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Enterprise Weekly/12.22.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "12.22"
+              "title": "New tab"
             }
           }
         ]
@@ -183,29 +179,31 @@
       "bases:Create new base": false
     }
   },
-  "active": "addaec9bcafd53d2",
+  "active": "487d803eb542a7b3",
   "lastOpenFiles": [
-    "Taoglas/12.19 Flash_Taoglas_Tech_Discovery_Summary.md",
     "Enterprise Weekly/12.22.md",
+    "HB_Certs/process.png",
+    "HB_Certs/HubSpot_CRM_Webpage.html",
+    "HB_Certs/HubSpot_CRM_Infographic.html",
+    "HB_Certs/Hubspot Salesforce Integration Certification.png",
+    "HB_Certs/HubSpot Architecture II Practicum Project Plan PDF-ready.pdf",
+    "HB_Certs/HubSpot Certification- Solutions Architect.png",
+    "HB_Certs/HubSpot Sales Hub Certification.png",
+    "HB_Certs/Enterprise Process.png",
+    "HB_Certs/Enterprise Org Chart.jpg",
+    "HB_Certs/Enter-gy_-_Operating_Model.pdf",
+    "HB_Certs/A8 Document Template.docx",
+    "HB_Certs",
+    "Warranty First _ Invoicing Questions.md",
+    "Taoglas/12.19 Flash_Taoglas_Tech_Discovery_Summary.md",
     "pptx/node_modules/detect-libc/lib/process.js",
     "pptx/node_modules/detect-libc/lib/filesystem.js",
     "pptx/node_modules/detect-libc/lib/elf.js",
     "pptx/node_modules/detect-libc/lib/detect-libc.js",
-    "pptx/node_modules/detect-libc/lib",
-    "pptx/node_modules/@types/node/ts5.6/index.d.ts",
-    "pptx/node_modules/@types/node/ts5.6/globals.typedarray.d.ts",
-    "pptx/node_modules/@types/node/ts5.6/buffer.buffer.d.ts",
-    "pptx/node_modules/@types/node/ts5.6",
-    "pptx/node_modules/@types/node/timers/promises.d.ts",
     "pptx/assets/super-logo.png",
     "pptx/tmp/super-logo.svg",
     "pptx/assets/slide-bg.png",
     "pptx/assets/donut-42.png",
-    "pptx/assets/icon-layers.png",
-    "pptx/assets/icon-clock.png",
-    "pptx/assets/icon-shield.png",
-    "pptx/assets/icon-spark.png",
-    "pptx/node_modules/playwright-core/lib/server/chromium/appIcon.png",
     "pptx/node_modules/playwright/lib/agents/playwright-test-planner.agent.md",
     "pptx/node_modules/playwright/lib/agents/playwright-test-plan.prompt.md",
     "pptx/node_modules/playwright/lib/agents/playwright-test-healer.agent.md",
@@ -227,9 +225,6 @@
     "pptx/node_modules/lie/README.md",
     "pptx/node_modules/lie/license.md",
     "pptx/node_modules/isarray/README.md",
-    "pptx/node_modules/inherits/README.md",
-    "pptx/node_modules/immediate/README.md",
-    "pptx/node_modules/core-util-is/README.md",
-    "a8-temp/assets/taoglas_logo.png"
+    "pptx/node_modules/inherits/README.md"
   ]
 }
