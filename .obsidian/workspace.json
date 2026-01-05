@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "61a9980f19135916",
+        "id": "7b284a1ff8d50a44",
         "type": "tabs",
         "children": [
           {
-            "id": "487d803eb542a7b3",
+            "id": "b899bcec4c81a828",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -179,27 +179,33 @@
       "bases:Create new base": false
     }
   },
-  "active": "487d803eb542a7b3",
+  "active": "b899bcec4c81a828",
   "lastOpenFiles": [
+    "JLG/JLG_Account_Prep_Doc.md",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "GEMINI.md",
+    "nul",
+    "Onboarding/12.23 Taryn - Weekly.md",
+    "Onboarding/12.16 Qs for Taryn.md",
+    "Suggested_Path_Examples/Cars _ SF __ HS Integration Optimization & Deduplication Customer Stories.xlsx",
+    "Suggested_Path_Examples/PMP - User Stories CLIENT .xlsx",
+    "Suggested_Path_Examples/NTT HubSpot Optimization - Customer Stories.xlsx",
+    "Suggested_Path_Examples/PMP - User Stories CLIENT  (1).xlsx",
+    "Suggested_Path_Examples/PMP - User Pain _ Stories.xlsx",
+    "Suggested_Path_Examples/Flanders - Customer Stories.xlsx",
+    "Suggested_Path_Examples/VCC - User Stories and Requirements.xlsx",
+    "Suggested_Path_Examples/2025 Format - WarrantyFirst Customer Stories.xlsx",
+    "Suggested_Path_Examples/ForceBrands - Sales Hub Implementation & Bullhorn Integration Customer Stories.xlsx",
     "Enterprise Weekly/12.22.md",
     "HB_Certs/process.png",
-    "HB_Certs/HubSpot_CRM_Webpage.html",
-    "HB_Certs/HubSpot_CRM_Infographic.html",
     "HB_Certs/Hubspot Salesforce Integration Certification.png",
-    "HB_Certs/HubSpot Architecture II Practicum Project Plan PDF-ready.pdf",
     "HB_Certs/HubSpot Certification- Solutions Architect.png",
     "HB_Certs/HubSpot Sales Hub Certification.png",
     "HB_Certs/Enterprise Process.png",
     "HB_Certs/Enterprise Org Chart.jpg",
-    "HB_Certs/Enter-gy_-_Operating_Model.pdf",
-    "HB_Certs/A8 Document Template.docx",
-    "HB_Certs",
     "Warranty First _ Invoicing Questions.md",
     "Taoglas/12.19 Flash_Taoglas_Tech_Discovery_Summary.md",
-    "pptx/node_modules/detect-libc/lib/process.js",
-    "pptx/node_modules/detect-libc/lib/filesystem.js",
-    "pptx/node_modules/detect-libc/lib/elf.js",
-    "pptx/node_modules/detect-libc/lib/detect-libc.js",
     "pptx/assets/super-logo.png",
     "pptx/tmp/super-logo.svg",
     "pptx/assets/slide-bg.png",
@@ -220,11 +226,6 @@
     "pptx/node_modules/string_decoder/README.md",
     "pptx/node_modules/queue/readme.md",
     "pptx/node_modules/safe-buffer/README.md",
-    "pptx/node_modules/process-nextick-args/readme.md",
-    "pptx/node_modules/process-nextick-args/license.md",
-    "pptx/node_modules/lie/README.md",
-    "pptx/node_modules/lie/license.md",
-    "pptx/node_modules/isarray/README.md",
-    "pptx/node_modules/inherits/README.md"
+    "pptx/node_modules/process-nextick-args/readme.md"
   ]
 }
