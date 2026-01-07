@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7b284a1ff8d50a44",
+        "id": "196a34af3b4567f2",
         "type": "tabs",
         "children": [
           {
-            "id": "b899bcec4c81a828",
+            "id": "5d02137d654529b1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Onboarding/1.7 - T q's.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "1.7 - T q's"
             }
           }
         ]
@@ -179,8 +183,21 @@
       "bases:Create new base": false
     }
   },
-  "active": "b899bcec4c81a828",
+  "active": "fba8d53ab0a876a8",
   "lastOpenFiles": [
+    "Taoglas/Taoglas - Sales Enablement Customer Stories.pptx",
+    "VAFB/VAFB_Account_Prep_Doc.md",
+    "Onboarding/1.7 - T q's.md",
+    "Enterprise Weekly/1.6 Weekly Project Review Strategy.md",
+    "Taoglas/For ASIS_ RFP Responses.md",
+    "Taoglas/Taoglas Strategy - Customer Stories.xlsx",
+    "Taoglas/Taoglas - Strategic Engamgenet Pre-Sale Client Summary (Sales Enablement).md",
+    "Taoglas/Taoglas - Pre-Sale Client Summary.md",
+    "Enterprise Weekly/12.16 Weekly Project Review Strategy.md",
+    "Taoglas/Taoglas Customer Stories_Trumpet.md",
+    "Project Prompt to Update.md",
+    "Scriptless Sales System.md",
+    "Taoglas/Speed-to-Lead Architecture & Routing.md",
     "JLG/JLG_Account_Prep_Doc.md",
     "AGENTS.md",
     "CLAUDE.md",
@@ -196,7 +213,6 @@
     "Suggested_Path_Examples/Flanders - Customer Stories.xlsx",
     "Suggested_Path_Examples/VCC - User Stories and Requirements.xlsx",
     "Suggested_Path_Examples/2025 Format - WarrantyFirst Customer Stories.xlsx",
-    "Suggested_Path_Examples/ForceBrands - Sales Hub Implementation & Bullhorn Integration Customer Stories.xlsx",
     "Enterprise Weekly/12.22.md",
     "HB_Certs/process.png",
     "HB_Certs/Hubspot Salesforce Integration Certification.png",
@@ -214,18 +230,6 @@
     "pptx/node_modules/playwright/lib/agents/playwright-test-plan.prompt.md",
     "pptx/node_modules/playwright/lib/agents/playwright-test-healer.agent.md",
     "pptx/node_modules/playwright/lib/agents/playwright-test-heal.prompt.md",
-    "pptx/node_modules/playwright/lib/agents/playwright-test-generator.agent.md",
-    "pptx/node_modules/playwright/lib/agents/playwright-test-generate.prompt.md",
-    "pptx/node_modules/playwright/lib/agents/playwright-test-coverage.prompt.md",
-    "pptx/node_modules/@types/node/README.md",
-    "pptx/node_modules/@img/colour/README.md",
-    "pptx/node_modules/@img/colour/LICENSE.md",
-    "pptx/node_modules/undici-types/README.md",
-    "pptx/node_modules/util-deprecate/README.md",
-    "pptx/node_modules/util-deprecate/History.md",
-    "pptx/node_modules/string_decoder/README.md",
-    "pptx/node_modules/queue/readme.md",
-    "pptx/node_modules/safe-buffer/README.md",
-    "pptx/node_modules/process-nextick-args/readme.md"
+    "pptx/node_modules/playwright/lib/agents/playwright-test-generator.agent.md"
   ]
 }
