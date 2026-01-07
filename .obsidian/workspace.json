@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "196a34af3b4567f2",
+        "id": "0f0441093a507e91",
         "type": "tabs",
         "children": [
           {
-            "id": "5d02137d654529b1",
+            "id": "80c3765ac02ab191",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Onboarding/1.7 - T q's.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "1.7 - T q's"
+              "title": "New tab"
             }
           }
         ]
@@ -185,6 +181,12 @@
   },
   "active": "fba8d53ab0a876a8",
   "lastOpenFiles": [
+    "Taoglas/Taoglas - Future State Process Map.pdf",
+    "Taoglas/Taoglas - Current State Process Map.pdf",
+    "Taoglas/Taoglas - ERD.pdf",
+    "Taoglas/Taoglas - Integrations.pdf",
+    "Taoglas/Taoglas Future State Integration Design.md",
+    "Taoglas/Internal Share  - Taoglas Discovery Questionnaire.docx",
     "Taoglas/Taoglas - Sales Enablement Customer Stories.pptx",
     "VAFB/VAFB_Account_Prep_Doc.md",
     "Onboarding/1.7 - T q's.md",
@@ -208,11 +210,6 @@
     "Suggested_Path_Examples/Cars _ SF __ HS Integration Optimization & Deduplication Customer Stories.xlsx",
     "Suggested_Path_Examples/PMP - User Stories CLIENT .xlsx",
     "Suggested_Path_Examples/NTT HubSpot Optimization - Customer Stories.xlsx",
-    "Suggested_Path_Examples/PMP - User Stories CLIENT  (1).xlsx",
-    "Suggested_Path_Examples/PMP - User Pain _ Stories.xlsx",
-    "Suggested_Path_Examples/Flanders - Customer Stories.xlsx",
-    "Suggested_Path_Examples/VCC - User Stories and Requirements.xlsx",
-    "Suggested_Path_Examples/2025 Format - WarrantyFirst Customer Stories.xlsx",
     "Enterprise Weekly/12.22.md",
     "HB_Certs/process.png",
     "HB_Certs/Hubspot Salesforce Integration Certification.png",
@@ -229,7 +226,6 @@
     "pptx/node_modules/playwright/lib/agents/playwright-test-planner.agent.md",
     "pptx/node_modules/playwright/lib/agents/playwright-test-plan.prompt.md",
     "pptx/node_modules/playwright/lib/agents/playwright-test-healer.agent.md",
-    "pptx/node_modules/playwright/lib/agents/playwright-test-heal.prompt.md",
-    "pptx/node_modules/playwright/lib/agents/playwright-test-generator.agent.md"
+    "pptx/node_modules/playwright/lib/agents/playwright-test-heal.prompt.md"
   ]
 }
