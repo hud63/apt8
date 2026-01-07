@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0f0441093a507e91",
+        "id": "7fea6cbf79f174ce",
         "type": "tabs",
         "children": [
           {
-            "id": "80c3765ac02ab191",
+            "id": "f9c69b9e77508b75",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -179,8 +179,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "fba8d53ab0a876a8",
+  "active": "f9c69b9e77508b75",
   "lastOpenFiles": [
+    "Taoglas/TaoGlass_Architecture_Breakdown.md",
+    "Taoglas/TaoGlass_HubSpot_Architecture.png",
+    "Taoglas/Ashley Michelle - Taoglass check-in.md",
+    "Onboarding/1.7 - T q's.md",
     "Taoglas/Taoglas - Future State Process Map.pdf",
     "Taoglas/Taoglas - Current State Process Map.pdf",
     "Taoglas/Taoglas - ERD.pdf",
@@ -189,7 +193,6 @@
     "Taoglas/Internal Share  - Taoglas Discovery Questionnaire.docx",
     "Taoglas/Taoglas - Sales Enablement Customer Stories.pptx",
     "VAFB/VAFB_Account_Prep_Doc.md",
-    "Onboarding/1.7 - T q's.md",
     "Enterprise Weekly/1.6 Weekly Project Review Strategy.md",
     "Taoglas/For ASIS_ RFP Responses.md",
     "Taoglas/Taoglas Strategy - Customer Stories.xlsx",
@@ -209,7 +212,6 @@
     "Onboarding/12.16 Qs for Taryn.md",
     "Suggested_Path_Examples/Cars _ SF __ HS Integration Optimization & Deduplication Customer Stories.xlsx",
     "Suggested_Path_Examples/PMP - User Stories CLIENT .xlsx",
-    "Suggested_Path_Examples/NTT HubSpot Optimization - Customer Stories.xlsx",
     "Enterprise Weekly/12.22.md",
     "HB_Certs/process.png",
     "HB_Certs/Hubspot Salesforce Integration Certification.png",
@@ -222,10 +224,8 @@
     "pptx/assets/super-logo.png",
     "pptx/tmp/super-logo.svg",
     "pptx/assets/slide-bg.png",
-    "pptx/assets/donut-42.png",
     "pptx/node_modules/playwright/lib/agents/playwright-test-planner.agent.md",
     "pptx/node_modules/playwright/lib/agents/playwright-test-plan.prompt.md",
-    "pptx/node_modules/playwright/lib/agents/playwright-test-healer.agent.md",
-    "pptx/node_modules/playwright/lib/agents/playwright-test-heal.prompt.md"
+    "pptx/node_modules/playwright/lib/agents/playwright-test-healer.agent.md"
   ]
 }
