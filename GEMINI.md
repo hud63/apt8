@@ -8,6 +8,7 @@ The following skills are available in this workspace as Gemini Workflows:
 - **pptx** - PowerPoint presentation creation and editing
 - **xlsx** - Spreadsheet creation, editing, and analysis
 - **a8-temp** - Pixel-perfect Taoglas brand document generation
+- **obsid** - Create and edit Obsidian Flavored Markdown with wikilinks, embeds, callouts, and more.
 
 ## Content Creation
 - **artifacts-builder** - Creating complex HTML artifacts with React and Tailwind
