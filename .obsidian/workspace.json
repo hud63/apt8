@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5155816eb007fa35",
+        "id": "02fd125ea29ea63a",
         "type": "tabs",
         "children": [
           {
-            "id": "1557b7700757fe46",
+            "id": "de580d238712f8c1",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -179,14 +179,19 @@
       "bases:Create new base": false
     }
   },
-  "active": "1557b7700757fe46",
+  "active": "de580d238712f8c1",
   "lastOpenFiles": [
-    "1.12.26/[CLIENT] Requirements Analysis Interview Outline.docx",
-    "1.12.26/Taryn - Onboarding.md",
+    "B2B SaaS Customer Onboarding Automation Playbook.md",
+    "Pendo.io Playbook.md",
+    "Totango Playbook.md",
+    "Pendo for Product Adoption & In-App Guidance Playbook.md",
+    "Acct_Prep_Prompt_Template.md",
+    "1.12.26/Authority Brands 4 User Interviews.md",
     "1.12.26/Interview Process Preparation.md",
     "1.12.26/Taoglas Interview Agendas .md",
+    "1.12.26/Taryn - Onboarding.md",
+    "1.12.26/[CLIENT] Requirements Analysis Interview Outline.docx",
     "1.12.26/Copy of Solutions Architect Resource Repository For Partners.xlsx",
-    "1.12.26/Authority Brands 4 User Interviews.md",
     "1.12.26/A8__CAVU Workshops & Solutioning Overview.docx",
     "1.12.26",
     "ill.zip",
@@ -201,7 +206,6 @@
     "examples/New_Airtable_Posts.csv",
     "examples/Optimization Assessment Playbook.md",
     "examples/MDI - Post Strategic Roadmap Customer Stories CLIENT VERSION.xlsx",
-    "examples/Futura Title - Resware Integration Object & Property Mapping.xlsx",
     "examples/Feasibility Evaluation Playbook__.md",
     "examples/Futura Title  - Resware Integration Requirements Document.md",
     "examples/ForceBrands QA_UAT Test Plan.md",
@@ -216,10 +220,6 @@
     "HB_Certs/etg_trainthetrainer.md",
     "HB_Certs/Traffix_Hubspot_Training_Deliverable.md",
     "ETG_Hubspot_Training_Deliverable.md",
-    "Traffix_Hubspot_Training_Deliverable.md",
-    "AmericanDerm/AAD_Account_Prep.md",
-    "AmericanDerm/Hubspot_Wishlist.md",
-    "AmericanDerm/AAD_Project_Charter.md",
     "Taoglas/TaoGlass_HubSpot_Architecture.png",
     "HB_Certs/process.png",
     "HB_Certs/Hubspot Salesforce Integration Certification.png",
